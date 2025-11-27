@@ -19,7 +19,6 @@ def rajzol_keszlet(keszlet):
     info.penup()
     info.goto(0, -250)
 
-    # Skálázás
     max_menny = max(c.mennyiseg for c in keszlet)
     if max_menny == 0:
         max_menny = 1
@@ -40,7 +39,6 @@ def rajzol_keszlet(keszlet):
         x = start_x + i * (bar_width + spacing)
         height = c.mennyiseg * scale
 
-        # oszlop rajzolása
         t.penup()
         t.goto(x, 0)
         t.pendown()
