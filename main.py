@@ -7,7 +7,7 @@ from raktar_modul import (
     cikk_torlese,
     teljes_ertek
 )
-from grafikus_modul import rajzol_keszlet   # <-- ÚJ
+from grafikus_modul import rajzol_keszlet
 
 def menu():
     print("\n========== KÉSZLETKEZELŐ ==========")
@@ -39,7 +39,7 @@ def main():
         elif v == "5":
             teljes_ertek(keszlet)
         elif v == "6":
-            rajzol_keszlet(keszlet)  # <-- turtle ablak nyílik
+            rajzol_keszlet(keszlet)
         elif v == "0":
             keszlet_ment(keszlet)
             print("Mentés kész. Kilépés.")
